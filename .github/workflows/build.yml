@@ -12,6 +12,7 @@ jobs:
     steps:
       - name: "Print variables"
         uses: actions/github-script@v5
-        run: |
-          console.log("ROPO")
-          console.log(context.payload.workflow_run)
+        with:
+          script: |
+            console.log("ROPO")
+            console.log(context.payload.workflow_run)

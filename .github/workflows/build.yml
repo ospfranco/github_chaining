@@ -10,9 +10,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: "Print variables"
+      - name: "Print context"
         uses: actions/github-script@v5
         with:
           script: |
-            console.log("ROPO")
-            console.log(context.payload.workflow_run)
+            console.log(context.payload)

@@ -1,4 +1,4 @@
-name: Fork builds
+name: Fork
 
 on:
   workflow_dispatch:

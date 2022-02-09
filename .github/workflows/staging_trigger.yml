@@ -1,0 +1,14 @@
+name: Fork staging builds
+
+on:
+  workflow_dispatch:
+    inputs:
+      name:
+        description: "Description"
+
+jobs:
+  say_hi:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hi
+        run: echo "Hi"
